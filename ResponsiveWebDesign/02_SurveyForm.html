@@ -1,0 +1,132 @@
+<!-- Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the
+lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you
+choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project,
+and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like
+React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy
+coding!
+User Story #1: I can see a title with id="title" in H1 sized text.
+User Story #2: I can see a short explanation with id="description" in P sized text.
+User Story #3: I can see a form with id="survey-form".
+User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+User Story #7: Inside the form, I can enter a number in a field with id="number".
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max
+attributes, I will see an HTML5 validation error.
+User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that
+describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or
+instructions for each field.
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group
+should be grouped using the name attribute.
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must
+have a value attribute.
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any
+environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+Once you're done, submit the URL to your working project with all its tests passing.
+Remember to use the Read-Search-Ask method if you get stuck. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        #survey-form{
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            border-radius: 5px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+    #submit{
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 3px;
+        border: 0px solid;
+        margin: 8px;
+        height: 30px;
+        width: 90px;    
+        align-self: flex-end;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- #1 -->
+    <h1 id="title">Survey Form</h1>
+    <!-- #3 -->
+    <form id="survey-form">
+        <!-- #2 -->
+        <p id="description">Please let us know your opinions on crappy movies.</p>
+        <!-- #4, #10, #11 -->
+        <label for="name" id="name-label">*Name</label>
+        <input type="text" name="name" id="name" placeholder="Please type in your name" required>
+        <br />
+        <!-- #5, #6, #10, #11 -->
+        <label for="email" id="email-label">*Email</label>
+        <input type="email" name="email" id="email" placeholder="Please type in your email address" required>
+        <br />
+        <!-- #7, #8, #9, #10, #11 -->
+        <label for="number" id="number-label">*Number</label>
+        <input type="number" name="number" id="number" required placeholder="Insert your ID" min="0" max="999999999">
+        <hr />
+        <!-- #12 -->
+        <p>Which of these terrible movies you believe is the worst?</p>
+        <select name="dropdown" id="dropdown">
+            <option value="Glitter">Glitter</option>
+            <option value="Transformers">Transformers</option>
+            <option value="Catwoman">Catwoman</option>
+        </select>
+        <p>*Would you watch any of these movies again?</p>
+        <ul>
+            <li><input type="radio" name="radio-buttons" id="Probably" value="1">Probably</li>
+            <li><input type="radio" name="radio-buttons" id="Possibly" value="2">Possibly</li>
+            <li><input type="radio" name="radio-buttons" id="Unlikely" value="3">Unlikely</li>
+        </ul>
+        <hr />
+        <p>Just tick some boxes and type some random text and you're done.</p>
+        <ul>
+            <li>
+                <input type="checkbox" name="" id="" value="1">
+                Check this out!
+            </li>
+            <li>
+                <input type="checkbox" name="" id="" value="2">
+                No, check <em>this</em> out!
+            </li>
+            <li>
+                <input type="checkbox" name="" id="" value="3">
+                No way! I'm the one!
+            </li>
+        </ul>
+        <hr />
+        <textarea name="" id="" cols="30" rows="10">What do you want to say?</textarea>
+        <br />
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
