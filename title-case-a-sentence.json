@@ -1,0 +1,1 @@
+{"index.js":"function titleCase(str) {\n  let stringCapitalized = str\n  stringCapitalized = stringCapitalized.toLowerCase()\n    .split(' ')\n    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))\n    .join(' ');\n  console.log(stringCapitalized)\n  return stringCapitalized\n}\n\ntitleCase(\"I'm a little tea pot\");\ntitleCase(\"бабушка курит трубку località àtilacol\")"}
