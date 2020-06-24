@@ -179,3 +179,4 @@ function convertMilles(mil) {
 console.log(convertToRoman(501))
 console.log(convertToRoman(400))
 console.log(convertToRoman(83))
+console.log(`349 em romanos: ${convertToRoman(349)}`)
