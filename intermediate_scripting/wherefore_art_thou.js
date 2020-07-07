@@ -9,6 +9,7 @@ function whatIsInAName(collection, source) {
     if (Object.values(obj).toString().includes(searchTerm)) {
       //console.log(`I should return this one ${Object.values(obj)}`)
       arr.push(obj)
+	    console.log(`omg, typing this in nvim`)
 
     }
   }
