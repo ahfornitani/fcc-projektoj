@@ -1,18 +1,20 @@
-function Animal() { }
-Animal.prototype.eat = function() { console.log("nom nom nom"); };
+function Animal() {}
+Animal.prototype.eat = function () {
+  console.log('nom nom nom')
+}
 
-function Dog() { }
+function Dog() {}
 
 // Add your code below this line
 Dog.prototype = Object.create(Animal.prototype)
 
-Dog.prototype.bark = function(){
-    console.log("Woof!")
+Dog.prototype.bark = function () {
+  console.log('Woof!')
 }
-Dog.prototype.constructor = Dog;
+Dog.prototype.constructor = Dog
 // Add your code above this line
 
-let beagle = new Dog();
+let beagle = new Dog()
 
-beagle.eat(); // Should print "nom nom nom"
-beagle.bark(); // Should print "Woof!"
+beagle.eat() // Should print "nom nom nom"
+beagle.bark() // Should print "Woof!"

@@ -1,5 +1,4 @@
 function mutation(arr) {
-
   let sortedArrayFromFirst = arr[0].toLowerCase().split('').sort()
   let sortedArrayFromSecond = arr[1].toLowerCase().split('').sort()
 
@@ -11,4 +10,4 @@ function mutation(arr) {
   return true
 }
 
-mutation(["hello", "hey"])
+mutation(['hello', 'hey'])

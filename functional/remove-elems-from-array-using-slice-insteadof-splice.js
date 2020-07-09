@@ -4,5 +4,5 @@ function nonMutatingSplice(cities) {
 
   // Add your code above this line
 }
-var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
-nonMutatingSplice(inputCities);
+var inputCities = ['Chicago', 'Delhi', 'Islamabad', 'London', 'Berlin']
+nonMutatingSplice(inputCities)
