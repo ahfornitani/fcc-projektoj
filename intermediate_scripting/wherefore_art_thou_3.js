@@ -1,23 +1,17 @@
 function whatIsInAName(collection, source) {
-	let arr = [];
+  let arr = []
 
-	arr = collection.filter(elem =>
-		Object.values(elem).toString().includes(Object.values(source))
-	);
+  arr = collection.filter((elem) =>
+    Object.values(elem).toString().includes(Object.values(source))
+  )
 
-	return arr;
+  return arr
 }
 
 console.log(
-	whatIsInAName(
-		[
-			{ apple: 1, bat: 2 },
+  whatIsInAName(
+    [{ apple: 1, bat: 2 }, { bat: 2 }, { apple: 1, bat: 2, cookie: 2 }],
 
-			{ bat: 2 },
-
-			{ apple: 1, bat: 2, cookie: 2 }
-		],
-
-		{ apple: 1, bat: 2 }
-	)
-);
+    { apple: 1, bat: 2 }
+  )
+)

@@ -7,8 +7,8 @@ function myReplace(str, before, after) {
   }
 
   // return string with argument "before" replaced by argument "after" (with correct case)
-  return str.replace(before, after);
+  return str.replace(before, after)
 }
 
 // test here
-myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+myReplace('A quick brown fox jumped over the lazy dog', 'jumped', 'leaped')
