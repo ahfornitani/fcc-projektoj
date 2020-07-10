@@ -1,20 +1,20 @@
 function sumPrimes(num) {
-  let i = 1;
-  let sum = 0;
+  let i = 1
+  let sum = 0
   while (i <= num) {
     if (isPrime(i)) {
-      sum += i;
+      sum += i
     }
-    i++;
+    i++
   }
-  return sum;
+  return sum
 }
 //function to check if a number is prime or not
 function isPrime(x) {
   for (let i = 2; i < x; i++) {
-    if (x % i === 0) return false;
+    if (x % i === 0) return false
   }
-  return x !== 1 && x !== 0;
+  return x !== 1 && x !== 0
 }
 //test here
-sumPrimes(10);
+sumPrimes(10)
