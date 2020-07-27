@@ -1,21 +1,20 @@
 class CampSite extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div>
-                <Camper />
-            </div>
-        );
-    }
-};
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <div>
+        <Camper />
+      </div>
+    )
+  }
+}
 // change code below this line
-const Camper = props => <p>{props.name}</p>
+const Camper = (props) => <p>{props.name}</p>
 
 Camper.propTypes = { name: PropTypes.string.isRequired }
 
 Camper.defaultProps = {
-    name: "CamperBot"
+  name: 'CamperBot'
 }
-
