@@ -1,6 +1,6 @@
 # fcc-projektoj
 
-Dosieraro de projektoj; ekzercoj de freeCodeCamp.
+Ĉi tiu deponejo enhavas dosierojn rilatajn al projektoj kaj ekzercoj de kursoj de freeCodeCamp.
 
 Este repositório contém arquivos relacionados a projetos e exercícios dos cursos da freeCodeCamp.
 
