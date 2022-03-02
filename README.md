@@ -1,4 +1,4 @@
-# Miaj projektoj de freeCodeCamp
+# Projektoj kaj ekzercoj — freeCodeCamp
 
 Ĉi tiu deponejo enhavas dosierojn rilatajn al projektoj kaj ekzercoj de kursoj de freeCodeCamp.
 
